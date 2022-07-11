@@ -1,0 +1,12 @@
+n=int(input("enter a number:"))
+lst = [True for i in range(n + 1)]
+x = 2
+while (x*x <= n):
+    if (lst[x] == True):
+         for i in range(x*2,n+1,x):
+            lst[i] = False
+    x += 1
+lst[0]= False
+lst[1]= False
+l=[i for i in range(n+1) if lst[i]]
+print(len(l))
