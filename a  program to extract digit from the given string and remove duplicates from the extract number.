@@ -1,0 +1,12 @@
+s=input()
+slen=len(s)
+b=[]
+c=[]
+for i in range(0,slen):
+    if s[i].isdigit():
+        b.append(int(s[i]))
+print('the numbers in given string',b)
+for num in b:
+    if num not in c:
+        c.append(num)
+print('the numbers in the string after removing duplicates',c)
