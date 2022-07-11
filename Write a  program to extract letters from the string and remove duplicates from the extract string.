@@ -1,0 +1,12 @@
+s=input()
+slen=len(s)
+b=[]
+c=[]
+for i in range(0,slen):
+    if s[i].isalpha():
+        b.append(s[i])
+print('the letters in given string are',b)
+for letters in b:
+    if letters not in c:
+        c.append(letters)
+print('the letters in the string after removing duplicates',c)
